@@ -18,8 +18,7 @@ export class Service{
             fileContent: base64
         };
         let endpoint = "api/testingfiles"
-        let header = new HttpHeaders();
-        header = header.set('content-type', 'application/json');
+        let header = new HttpHeaders().set('content-type', 'application/json');
 
         
         return firstValueFrom(
