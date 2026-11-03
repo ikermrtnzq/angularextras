@@ -43,7 +43,7 @@ import { authTokenInterceptor } from './interceptors/auth-token-interceptor';
     provideBrowserGlobalErrorListeners(),
     Service,
     ServiceEquipos,ServiceEmpleados,
-    provideHttpClient(withInterceptors([authTokenInterceptor])),
+    provideHttpClient(withInterceptors([authTokenInterceptor, errorInterceptor])),
   ],
   bootstrap: [App],
 })
