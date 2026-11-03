@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <h2 class="mb-4">Equipos de fútbol</h2>
+    <div class="row">
+        @for (equipo of equipos; track equipo) {
+            <div class="card h-100">
+                <img
+                [src]="equipo.imagen"
+                class="card-img-top"
+                [alt]="equipo.nombre"
+                style="height: 120px; object-fit: contain;"
+                >
+                <div class="card-body">
+                    <h5 class="card-title">{{ equipo.nombre }}</h5>
+                    <p><strong>Champions:</strong> {{ equipo.champions }}</p>
+                    <p><strong>Finales:</strong> {{ equipo.finalista }}</p>
+
+                    <a [href]="equipo.web" target="_blank" class="btn btn-primary">
+                        Página web
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

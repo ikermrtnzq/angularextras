@@ -1,9 +1,11 @@
 
 <div class="container mt-5 text-center">
-    <h2 class="mb-4">Subir imagen</h2>
-    <label for="imagen" class="btn btn-primary">Examinar imagen</label>
-    <input #imagenInput type="file" id="imagen" accept="image/*" class="d-none"/>
-    <br>
-    <br>
-    <button class="btn btn-success" (click)="seleccionarImagen()">Guardar imagen seleccionada</button>
+    <form action=" " #form="ngForm">
+        <h2 class="mb-4">Subir imagen</h2>
+        <label for="imagen" class="btn btn-primary">Examinar imagen</label>
+        <input #imagenInput type="file" id="imagen" accept="image/*" class="d-none"/>
+        <br>
+        <br>
+        <button class="btn btn-success" (click)="subir()">Guardar imagen seleccionada</button>
+    </form>
 </div>

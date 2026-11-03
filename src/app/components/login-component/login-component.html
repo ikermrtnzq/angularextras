@@ -1,0 +1,13 @@
+
+<div class="container mt-4">
+    <div class="border border-info border-5 mx-auto w-50 d-flex flex-column p-3 mt-4 rounded shadow">
+        <h1 class="text-center text-info">LOGIN</h1>
+        <form #formLogin="ngForm" action="" class="d-flex flex-column gap-2">
+            <label for="" class="form-label">Nombre: </label>
+            <input name="cajanombre" #cajanombre type="text" class="form-control">
+            <label for="" class="form-label">Contraseña: </label>
+            <input name="cajacontraseia" #cajacontrasenia type="password" class="form-control">
+            <button (click)="login()" class="btn btn-info text-white mt-2">login</button>
+        </form>
+    </div>
+</div>

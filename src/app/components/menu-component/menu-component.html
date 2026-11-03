@@ -11,7 +11,19 @@
             <a class="nav-link" [routerLink]="['/']">home</a>
             </li>
             <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/login']">acceder</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/subordinados']">subordinados</a>
+            </li>
+            <li class="nav-item">
             <a class="nav-link" [routerLink]="['/subirfoto']">subir</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/pdf']">pdf</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/equipo']">equipo</a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -28,9 +40,8 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
         </ul>
-        <form class="d-flex" role="search">
-            <button class="btn btn-outline-danger" type="button" >hi</button>
-        </form>
+        <button (click)="logout()" class="btn btn-outline-danger" type="button" >logout</button>
+        
         </div>
     </div>
 </nav>

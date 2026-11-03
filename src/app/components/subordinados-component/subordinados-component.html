@@ -1,0 +1,28 @@
+@if (token) {
+    @if (subordinados) {
+        <div class="d-flex flex-column gap-4 mx-auto w-50 pt-5">
+            <table class="table table-bordered table-hover">
+                <thead class="table-info border border-info border-3">
+                    <tr class="text-center"> 
+                        <th class="ps-2">Nombre</th>
+                        <th class="ps-2">Oficio</th>
+                        <th class="ps-3">Salario</th>
+                        <th class="ps-3">Director</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (emp of subordinados; track emp) {
+                        <tr class="border border-info">
+                            <td class="border border-info border-3 ps-2">{{emp.apellido}}</td>
+                            <td class="border border-info border-3 ps-2">{{emp.oficio}}</td>
+                            <td class="border border-info border-3 ps-2">{{emp.salario}}€</td>
+                            <td class="border border-info border-3 ps-2">{{emp.director}}</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+}
